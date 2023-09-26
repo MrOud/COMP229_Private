@@ -6,7 +6,7 @@
     left: 0;
     display: grid;
     grid-template-columns: 10% auto 10%;
-    grid-template-rows: 25mm auto;
+    grid-template-rows: 25mm auto 15mm;
     z-index: 1;
 }
 
@@ -19,13 +19,13 @@
     padding-left: 1rem;
 }
 
-.navigationMain > h1 > a {
+.navigationLinks > h1 > a {
     padding: 0.25rem;
     text-decoration: none;
     color: black;
 }
 
-.navigationMain > h1 > a:visited {
+.navigationLinks > h1 > a:visited {
     color: black;
 }
 
@@ -49,7 +49,12 @@
 .pageContent {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+    padding: 1em;
+    background: rgba(200, 200, 200, 0.8);
+    border: 4px solid black;
+    border-radius: 1em;
 }
+
 .svgBackground {
     position: absolute;
     top: 0;

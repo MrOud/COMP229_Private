@@ -5,9 +5,20 @@
         xmlns="http://www.w3.org/2000/svg">
 
     <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-        <stop id="gradient-stop1" offset="25%" style="stop-color:rgb(4, 10, 36);stop-opacity:1" />
-        <stop id="gradient-stop1" offset="100%" style="stop-color:rgb(9, 132, 148);stop-opacity:1" />
+        <stop id="gradient-stop1" offset="25%" style="stop-color:rgb(9, 132, 148);stop-opacity:1" />
+        <stop id="gradient-stop2" offset="50%" style="stop-color:rgb(26, 240, 240);stop-opacity:1" />
     </linearGradient>
-    
+
     <rect x="0" y="0" width="100%" height="100%" fill="url(#gradient)"/>
+
+    <%- include('./svgPartials/cloud1', {objectId: 'cloud1'}) %>
+    <%- include('./svgPartials/cloud2', {objectId: 'cloud2'}) %>
+    <%- include('./svgPartials/cloud3', {objectId: 'cloud3'}) %>
+    <%- include('./svgPartials/cloud1', {objectId: 'cloud4'}) %>
+    <%- include('./svgPartials/cloud2', {objectId: 'cloud5'}) %>
+    <%- include('./svgPartials/cloud3', {objectId: 'cloud6'}) %>
+    <%- include('./svgPartials/cloud1', {objectId: 'cloud7'}) %>
+    <%- include('./svgPartials/cloud2', {objectId: 'cloud8'}) %>
+    <%- include('./svgPartials/cloud3', {objectId: 'cloud9'}) %>
+    <%- include('./svgPartials/rocket') %>
 </svg>
