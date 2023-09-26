@@ -1,5 +1,5 @@
 exports.render = function(req, res) {
-    res.render('Contact', {
+    res.render('contact', {
         pageName: 'Contact'
     })
 }
