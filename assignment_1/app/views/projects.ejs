@@ -1,7 +1,50 @@
 <%- include('./partials/header') %>
 <%- include('./partials/navigation') %>
         <div class="pageContent">
-                <h1><%= pageName %></h1>
-                <img src="imgs/logo.png" alt="Logo">
+                <div class="pageHeading">
+                        <h1>Projects</h1>
+                        <h2>100% scratch made projects.... no tutorials.... no AI generated 'help'</h2>
+                </div>
+                <div class="projectCardsGrid">
+                        <div class="projectCard">
+                                <h3>Brick Breaker</h3>
+                                <img src="./imgs/brickBreaker.PNG" />
+                                
+                                <p>
+                                A classic brick breaker game made using React 3 Fiber, controls are currently
+                                keyboard only - mobile support will be added. v0.01a
+                                </p>
+                                <div class="projectCardLinks">
+                                        <a href="https://oudiovisual.ca/projects/brickBreaker/">Play</a>
+                                        <a href="https://github.com/MrOud/BrickBreaker">GitHub</a>
+                                </div>
+                        </div>
+                        <div class="projectCard">
+                                <h3>Cannon Demo</h3>
+                                <img src="./imgs/cannon.PNG" />
+                                
+                                <p>
+                                Created midway through completing the three.js journey course, this was a quick
+                                project made using vanilla javascript, three.js, and the cannon physics library. 
+                                Controls are keyboard only.
+                                </p>
+                                <div class="projectCardLinks">
+                                        <a href="https://oudiovisual.ca/threeCannon/">Play</a>
+                                        <a href="https://github.com/MrOud/ThreeJSCannon">GitHub</a>
+                                </div>
+                        </div>
+                        <div class="projectCard">
+                                <h3>8mm Film Digitizer</h3>
+                                <img src="./imgs/digitizer.jpg" />
+                                
+                                <p>
+                                An 8mm Film Digitzer I designed and created when I used to do photo restoration. This build
+                                recap covers the inspiration, design, and shows some sample output.
+                                </p>
+                                <div class="projectCardLinks">
+                                        <a href="https://oudiovisual.ca/projects/8mmDigitizer/">Read more</a>
+                                </div>
+                        </div>
+                </div>
         </div>
 <%- include('./partials/footer') %>

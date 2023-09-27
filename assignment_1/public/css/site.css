@@ -1,3 +1,7 @@
+/**
+ * Kris Oud 301274712
+ * COMP 229 Assignment 1
+ */
 @font-face {
     font-family: Dekko;
     src: url('./Dekko/Dekko-Regular.ttf');
@@ -7,11 +11,55 @@ body {
     font-family: Dekko, Helvetica, sans-serif;
 }
 
-p {
-    font-size: 1.2em;
+h1 {
+    font-size: 2.5em;
 }
 
+h2 { 
+    font-size: 2em;
+}
 
+h3 { 
+    font-size: 1.75em;
+}
+
+h4 {
+    font-size: 1.5em;
+}
+
+p, li {
+    font-size: 1.25em;
+}
+
+a {
+    color: black;
+}
+
+@media screen and (max-width: 1000px) {
+    h1 {
+        font-size: 4.5em;
+    }
+
+    h2 { 
+        font-size: 4em;
+    }
+
+    h3 {
+        font-size: 3.75em;
+    }
+
+    h4 {
+        font-size: 3.5em;
+    }
+
+    p, li {
+        font-size: 3em;
+    }
+}
+
+/**
+ * All Pages
+ */
 .primaryGrid {
     width: 100%;
     height: 100%;
@@ -20,7 +68,7 @@ p {
     left: 0;
     display: grid;
     grid-template-columns: 10% auto 10%;
-    grid-template-rows: 25mm auto 15mm;
+    grid-template-rows: 25mm auto 5mm;
     z-index: 1;
 }
 
@@ -38,10 +86,12 @@ p {
 }
 
 .navigationLinks > h1 > a {
-    padding: 0.25rem;
     text-decoration: none;
     color: black;
+    font-size: 2em;
 }
+
+
 
 .navigationLinks > h1 > a:visited {
     color: black;
@@ -62,6 +112,7 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
 }
 
 .pageContent {
@@ -71,16 +122,10 @@ p {
     background: rgba(200, 200, 200, 0.8);
     border: 4px solid black;
     border-radius: 1em;
-    overflow-y: scroll;
-    scrollbar-width: none;
-}
-
-.pageContent::-webkit-scrollbar {
-    display: none;
 }
 
 .svgBackground {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100dvw;
@@ -88,11 +133,44 @@ p {
     z-index: 0;
 }
 
-.aboutHeading {
+.pageHeading {
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
 }
 
+.pageHeading > h1, .pageHeading > h2 {
+    margin: 0 0;
+}
+
+/**
+ * Home Page
+ */
+.buttonFlexContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.buttonDiv {
+    padding: 1.2rem;
+    background-color: orange;
+    border: 5px solid black;
+    border-radius: 50%;
+}
+
+.buttonDiv > a {
+    color: black;
+    font-size: 2em;
+    text-decoration: none;
+    
+}
+
+/**
+ * About Page
+ */
 .aboutCard {
     border: 1px black solid;
     border-radius: 1em;
@@ -105,19 +183,86 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
     border-bottom: 2px solid black;
+}
+
+.aboutCard > .cardBody > a {
+    font-size: 1.2em;
+}
+
+@media screen and (max-width: 1000px) {
+    .aboutCard > .cardHead {
+        flex-direction: column;
+    }
+
+    .aboutCard > .cardHead > h2, .aboutCard > .cardHead > h4 {
+        margin: 0 0;
+    }
+
+    .aboutCard > .cardBody > a {
+        font-size: 3em;
+    }
 }
 
 .aboutTopFlex {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     padding-right: 1rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .selfPortrait {
+    border: 10px solid black;
+    border-radius: 50%;
     max-width: 250px;
     max-height: 250px;
     aspect-ratio: 1 / 1;
 }
 
+/**
+ * Projects Page
+ */
 
+.projectCardsGrid {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.projectCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
+    background-color: rgba(127, 255, 212, 0.6);
+    padding: 0.5rem;
+    border: 5px solid black;
+    border-radius: 1rem;
+}
+
+.projectCard > img {
+    width: 80%;
+}
+
+.projectCardLinks {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.projectCardLinks > a {
+    font-size: 1.25em;
+}
+
+@media screen and (max-width: 1000px) {
+    .projectCardsGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .projectCardLinks > a {
+        font-size: 3em;
+    }
+}
