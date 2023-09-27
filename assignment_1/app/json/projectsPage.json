@@ -1,0 +1,33 @@
+[
+    {
+        "divClass": "heading",
+        "id": "head0",
+        "desc": "Projects"
+    },
+    {
+        "divClass": "simpleProjectCard",
+        "id": "Card1",
+        "props": 
+        {
+            "title": "Brick Breaker",
+            "dates": "Current Version: 0.1a",
+            "desc": "A R3F remake of a classic genre. Controls: Keyboard only",
+            "link": "https://oudiovisual.ca/projects/brickBreaker/",
+            "linkText": "Play",
+            "gitLink": "https://github.com/MrOud/BrickBreaker",
+            "gitLinkText": "View on GitHub"
+        }
+    },
+    {
+        "divClass": "simpleLinkCard",
+        "id": "Card2",
+        "props": 
+        {
+            "title": "The 8mm Film Digitizer",
+            "dates": "09/18/23",
+            "desc": "A recap of an old project from my days working in photo restoration where I converted an old film projector into a film digitizer.",
+            "link": "https://oudiovisual.ca/projects/8mmDigitizer/",
+            "linkText": "Read here"
+        }
+    }
+]

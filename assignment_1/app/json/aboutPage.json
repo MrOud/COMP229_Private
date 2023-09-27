@@ -1,0 +1,194 @@
+[
+    {
+        "divClass": "heading",
+        "id": "head0",
+        "desc": "Education"
+    },
+    {
+        "divClass": "simpleLinkCard",
+        "id": "Card1",
+        "props": 
+        {
+            "title": "Centennial College: Software Engineering Technician",
+            "dates": "2022-Present",
+            "desc": "In the final year of a 2 year program for Software Engineering while utilizing a variety of languages and technologies. Current GPA 4.2/4.5",
+            "link": "https://www.centennialcollege.ca/programs-courses/full-time/software-engineering-technician-online",
+            "linkText": "Program Link"
+        }
+    },
+    {
+        "divClass": "simpleLinkCard",
+        "id": "Card2",
+        "props": 
+        {
+            "title": "Athabasca University: BSc Computing & Information Systems ",
+            "dates": "2015-2020",
+            "desc": "Completed third year of study in an independent distance education in a program that covers a broad base of skills including: computer programming, networking, business communications, organizational behavior, critical reasoning, and mathematics. Due to the pandemic I was unable to complete the course.",
+            "link": "https://www.athabascau.ca/programs/summary/bachelor-of-science-in-computing-and-information-systems.html",
+            "linkText": "Program Link"
+        }
+    },
+    {
+        "divClass": "heading",
+        "id": "head1",
+        "desc": "Professional Experience"
+    },
+    {
+        "divClass": "listingCard",
+        "id": "Card3",
+        "props": 
+        {
+            "title": "Programming",
+            "dates": "3+ years",
+            "desc": "Produced code as needed for a variety of business projects in a variety of languages.",
+            "list": 
+            [
+                {
+                    "id": "ul1",
+                    "value": "Javascript - Vanilla JS, jQuery, React, Node"
+                },
+                {
+                    "id": "ul2",
+                    "value": "HTML/CSS"
+                },
+                {
+                    "id": "ul3",
+                    "value": "PHP"
+                },
+                {
+                    "id": "ul4",
+                    "value": "SQL"
+                },
+                {
+                    "id": "ul5",
+                    "value": "C/C#"
+                },
+                {
+                    "id": "ul6",
+                    "value": "Java"
+                },
+                {
+                    "id": "ul7",
+                    "value": "Python"
+                },
+                {
+                    "id": "ul8",
+                    "value": "Bash/PowerShell"
+                }
+            ]
+       }
+    },
+    {
+        "divClass": "simpleCard",
+        "id": "Card4",
+        "props": 
+        {
+            "title": "Electronic Design",
+            "dates": "5+ years",
+            "desc": "Designing electronic circuits and code for projects powered by AVR, Arduino, or Raspberry Pi"
+        }
+    },
+    {
+        "divClass": "listingCard",
+        "id": "Card5",
+        "props": 
+        {
+            "title": "Deskside Support Technician / Security & Compliance Analyst ",
+            "dates": "5+ years",
+            "desc": "Providing front line support as part of a large corporate team.",
+            "list": 
+            [
+                {
+                    "id": "ul1",
+                    "value": "Supported 400+ staff both onsite and remotely."
+                },
+                {
+                    "id": "ul2",
+                    "value": "Troubleshooting and service user stations (Windows & Mac), printers, network equipment, and mobile telecommunication devices"
+                },
+                {
+                    "id": "ul3",
+                    "value": "Provide friendly and professional support to members at all levels of the organization."
+                },
+                {
+                    "id": "ul4",
+                    "value": "Administer user accounts and systems using Active Directory and JAMF."
+                },
+                {
+                    "id": "ul5",
+                    "value": "Create scripts to automate processes for auditing accounts and group memberships."
+                }
+            ]
+       }
+    },
+    {
+        "divClass": "listingCard",
+        "id": "Card6",
+        "props": 
+        {
+            "title": "Equipment Repair",
+            "dates": "10+ years",
+            "desc": "Troubleshooting and fixing a variety of equipment, including:",
+            "list": 
+            [
+                {
+                    "id": "ul1",
+                    "value": "Computers, Printers, and other Peripherals"
+                },
+                {
+                    "id": "ul2",
+                    "value": "Photographic film developing and printing equipment"
+                },
+                {
+                    "id": "ul3",
+                    "value": "Multi-rotor aircraft (drones)"
+                },
+                {
+                    "id": "ul4",
+                    "value": "Projectors, VCRs, DVD Players, and Reel-to-reel audio equipment"
+                },
+                {
+                    "id": "ul5",
+                    "value": "Cameras, Flashes, and other photographic equipment"
+                }
+            ]
+       }
+    },
+    {
+        "divClass": "simpleCard",
+        "id": "Card7",
+        "props": 
+        {
+            "title": "Photo Restoration",
+            "dates": "3+ years",
+            "desc": "Scanning and repairing damaged photographs and film in a variety of formats using Photoshop, Lightroom, and Premiere Pro."
+        }
+    },
+    {
+        "divClass": "simpleCard",
+        "id": "Card8",
+        "props": 
+        {
+            "title": "Print Services",
+            "dates": "3+ years",
+            "desc": "Preparing photos, signage, and various business documents for printing. Stretching large canvases (>60\") and dry mounting posters."
+        }
+    },
+    {
+        "divClass": "heading",
+        "id": "head2",
+        "desc": "Certificates"
+    },
+    {
+        "divClass": "simpleLinkCard",
+        "id": "Card9",
+        "props": 
+        {
+            "title": "Three.js Journey",
+            "dates": "Aug 2023",
+            "desc": "70+ hours of video and projects covering three.js, React, React Three Fiber, and Blender.",
+            "link": "https://threejs-journey.com/",
+            "linkText": "Link"
+        }
+    }
+]

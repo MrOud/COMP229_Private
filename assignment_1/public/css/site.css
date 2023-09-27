@@ -53,6 +53,12 @@
     background: rgba(200, 200, 200, 0.8);
     border: 4px solid black;
     border-radius: 1em;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.pageContent::-webkit-scrollbar {
+    display: none;
 }
 
 .svgBackground {
@@ -62,6 +68,27 @@
     width: 100dvw;
     height: 100dvh;
     z-index: 0;
+}
+
+.aboutHeading {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.aboutCard {
+    border: 1px black solid;
+    border-radius: 1em;
+    padding: 0.5em;
+    margin: 0.5em 0;
+    background-color: rgba(9, 132, 148, 0.6);
+}
+
+.aboutCard > .cardHead {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: 2px solid black;
+
 }
 
 

@@ -1,0 +1,14 @@
+<div class="aboutCard">
+    <div class="cardHead">
+        <h3><%= props.title %></h3>
+        <h4><%= props.dates %></h4>
+    </div>
+    <div class="cardBody">
+        <p><%= props.desc %></p>
+        <ul>
+            <% for (li in props.list) { %>
+                <li><%= props.list[li].value %></li>
+            <% } %>
+        </ul>
+    </div>
+</div>
