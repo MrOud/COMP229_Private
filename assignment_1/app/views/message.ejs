@@ -1,0 +1,14 @@
+<%- include('./partials/header') %>
+<%- include('./partials/navigation') %>
+        <div class="pageContent">
+                <h1>Your Message:</h1>
+                <p>Sent From: <%= messageBody.fname %> <%= messageBody.lname %></p>
+                <p>Contact Number: <%= messageBody.phone %></p>
+                <p>Contact Email: <%= messageBody.email %></p>
+                <h2>Message:</h2>
+                <p><%= messageBody.message %></p>
+                <a href="/">Return to Home</a>
+        </form>
+        </div>
+        
+<%- include('./partials/footer') %>

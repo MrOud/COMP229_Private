@@ -1,4 +1,10 @@
 /**
+ * animateBackground.js 
+ * Kris Oud - 301274712
+ * Sept 27th, 2023
+ */
+
+/**
  * Sky
  */
 const stop1 = document.getElementById('gradient-stop1')

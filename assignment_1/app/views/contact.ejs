@@ -1,7 +1,31 @@
 <%- include('./partials/header') %>
 <%- include('./partials/navigation') %>
         <div class="pageContent">
-                <h1><%= pageName %></h1>
-                <img src="imgs/logo.png" alt="Logo">
+                <div class="contactCard">
+                        <h3>Contact Me</h3>
+                        <a href="https://www.linkedin.com/in/kris-oud-576ba766/">Linked In</a>
+                </div>
+                <form action="/contact" method="post">
+                        <div class="formGrid">
+                                <div class="formRow">
+                                        <input type="text" id="fname" name="fname" placeholder="First Name">
+                                        <input type="text" id="lname" name="lname" placeholder="Last Name">
+                                </div>
+                                
+                                <div class="formRow">
+                                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="555-555-5555">
+                                </div>
+
+                                <div class="formRow">
+                                        <input type="email" id="email" name="email" placeholder="email@address.net">
+                                </div>
+
+                                <div class="FormRow">
+                                        <textarea name=message rows="10" cols="40" placeholder="Enter your Message..."></textarea>
+                                </div>
+                                <input type="submit" value="Send" class="sendButton">
+                        </div>
+                </form>
         </div>
+        
 <%- include('./partials/footer') %>

@@ -1,6 +1,7 @@
 /**
- * Kris Oud 301274712
- * COMP 229 Assignment 1
+ * Site.css
+ * Kris Oud - 301274712
+ * Sept 27th, 2023
  */
 @font-face {
     font-family: Dekko;
@@ -274,12 +275,46 @@ a {
 .skillCard {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
 .skillCard > p {
     font-size: 1.5em;
     display: list-item;
-    margin: 0 0;
+    margin: 0 1em;
 }
+
+/**
+ * Contacts Page
+ */
+
+.formGrid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(6, auto);
+}
+
+.formRow {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+textarea {
+    margin-top: 1em;
+    width: 80%;
+}
+
+input {
+    box-sizing: border-box;
+    width: 80%;
+}
+
+input[type="text"] {
+    width: 40%;
+    margin: auto 0;
+}
+
+
 
