@@ -3,14 +3,12 @@ var express = require("express"),
   morgan = require("morgan"),
   compress = require("compression"),
   bodyParser = require("body-parser"),
-  methodOverride = require("method-override"),
-  session = require('express-session')
+  methodOverride = require("method-override")
 
 module.exports = function () {
   
   var app = express();
 
-  process.env.NODE_ENV = "production"
   if (process.env.NODE_ENV === "development") {
     app.use(morgan("dev"));
   } else if (process.env.NODE_ENV === "production") {

@@ -316,5 +316,15 @@ input[type="text"] {
     margin: auto 0;
 }
 
+.contactCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(127, 255, 212, 0.6);
+    border: 2px solid black;
+    border-radius: 1em;
+}
 
-
+.contactCard > h3, .contactCard > p {
+    margin: 0;
+}
