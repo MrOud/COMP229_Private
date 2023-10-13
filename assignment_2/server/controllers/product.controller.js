@@ -39,11 +39,10 @@ const list = async (req, res) => {
             })
         }
     }
-
 }
 
 const remove = async (req, res) => {
-    console.log(" Remove")
+    console.log("Remove")
     try {
         let product = req.profile
         let deletedProduct = await product.deleteOne()
@@ -56,16 +55,41 @@ const remove = async (req, res) => {
     }
 }
 
-const removeAll = (req, res) => {
+const removeAll = async (req, res) => {
     console.log("removeAll")
-}
-const read = (req, res) => {
-    console.log("Read")
-}
-const update = (req, res) => {
-    console.log("Update")
+    try {
+        await Product.deleteMany({})
+        res.json({
+            message: "All deleted"
+        })
+    } catch (err) {
+        console.log(err)
+        return res.status(400).json({
+            error: "Could not delete product"
+        })
+    }
 }
 
+const read = (req, res) => {
+    console.log("Read")
+    return res.json(req.profile)
+}
+
+const update = async (req, res) => {
+    console.log("Update")
+    try {
+        let product = req.profile
+        product = extend(product, req.body)
+
+        await product.save()
+        res.json(product)
+    } catch (err) {
+        console.log(err)
+        return res.status(400).json({
+            error: "Could not delete product"
+        })
+    }
+}
 
 const productById = async (req, res, next, id) => {
     console.log("pById: " + id)
